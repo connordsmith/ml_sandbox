@@ -1,0 +1,600 @@
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.001.data
+Names File             : ./0.001.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163119
+Training Data          : ./0.001.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Overall Voted Accuracy = 100.0000%
+Overall Confusion Matrix:
+
+TRUTH
+   0 
+---- 
+3045   0     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.005.data
+Names File             : ./0.005.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163121
+Training Data          : ./0.005.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Overall Voted Accuracy = 100.0000%
+Overall Confusion Matrix:
+
+TRUTH
+   0 
+---- 
+3045   0     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.01.data
+Names File             : ./0.01.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163125
+Training Data          : ./0.01.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Overall Voted Accuracy = 100.0000%
+Overall Confusion Matrix:
+
+TRUTH
+   0 
+---- 
+3045   0     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.025.data
+Names File             : ./0.025.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163127
+Training Data          : ./0.025.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 92.9392%
+Average Accuracy = 92.9392%
+TRUTH
+  0  1 
+--- -- 
+484 26   0
+ 17 82   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 94.0887%
+Average Accuracy = 94.0887%
+TRUTH
+  0  1 
+--- -- 
+487 22   0
+ 14 86   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 94.4171%
+Average Accuracy = 94.4171%
+TRUTH
+  0  1 
+--- -- 
+491 24   0
+ 10 84   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 93.7603%
+Average Accuracy = 93.7603%
+TRUTH
+  0  1 
+--- -- 
+487 24   0
+ 14 84   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 92.9392%
+Average Accuracy = 92.9392%
+TRUTH
+  0   1 
+--- --- 
+465   8   0
+ 35 101   1     PREDICTIONS
+
+Overall Voted Accuracy = 93.6289%
+Overall Confusion Matrix:
+
+ TRUTH
+   0   1 
+---- --- 
+2414 104   0
+  90 437   1     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.05.data
+Names File             : ./0.05.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163129
+Training Data          : ./0.05.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 89.9836%
+Average Accuracy = 89.9836%
+TRUTH
+  0   1 
+--- --- 
+422  29   0
+ 32 126   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 89.6552%
+Average Accuracy = 89.6552%
+TRUTH
+  0   1 
+--- --- 
+427  36   0
+ 27 119   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 92.2824%
+Average Accuracy = 92.2824%
+TRUTH
+  0   1 
+--- --- 
+428  21   0
+ 26 134   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 89.6552%
+Average Accuracy = 89.6552%
+TRUTH
+  0   1 
+--- --- 
+419  29   0
+ 34 127   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 88.1773%
+Average Accuracy = 88.1773%
+TRUTH
+  0   1 
+--- --- 
+413  32   0
+ 40 124   1     PREDICTIONS
+
+Overall Voted Accuracy = 89.9507%
+Overall Confusion Matrix:
+
+ TRUTH
+   0   1 
+---- --- 
+2109 147   0
+ 159 630   1     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.075.data
+Names File             : ./0.075.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163190
+Training Data          : ./0.075.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 86.5353%
+Average Accuracy = 86.5353%
+TRUTH
+  0   1 
+--- --- 
+307  24   0
+ 58 220   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 87.5205%
+Average Accuracy = 87.5205%
+TRUTH
+  0   1 
+--- --- 
+326  37   0
+ 39 207   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 88.0131%
+Average Accuracy = 88.0131%
+TRUTH
+  0   1 
+--- --- 
+333  41   0
+ 32 203   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 86.0427%
+Average Accuracy = 86.0427%
+TRUTH
+  0   1 
+--- --- 
+316  36   0
+ 49 208   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 87.6847%
+Average Accuracy = 87.6847%
+TRUTH
+  0   1 
+--- --- 
+334  45   0
+ 30 200   1     PREDICTIONS
+
+Overall Voted Accuracy = 87.1593%
+Overall Confusion Matrix:
+
+ TRUTH
+   0    1 
+---- ---- 
+1616  183   0
+ 208 1038   1     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.0.data
+Names File             : ./0.0.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163345
+Training Data          : ./0.0.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 100.0000%
+Average Accuracy = 100.0000%
+TRUTH
+  0 
+--- 
+609   0     PREDICTIONS
+
+Overall Voted Accuracy = 100.0000%
+Overall Confusion Matrix:
+
+TRUTH
+   0 
+---- 
+3045   0     PREDICTIONS
+
+============================================================
+Data Format            : avatar
+Data Filename          : ./0.1.data
+Names File             : ./0.1.names
+Truth Column           : 16
+Skipped Feature Numbers: 1-3,12-15
+Number of Folds        : 5
+Number of Trees/Fold   : 1
+Crossval Type          : N-fold
+Seed for *rand48       : 1529163348
+Training Data          : ./0.1.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees:     0    1
+Voted Accuracy   = 86.2069%
+Average Accuracy = 86.2069%
+TRUTH
+  0   1 
+--- --- 
+326  51   0
+ 33 199   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 87.0279%
+Average Accuracy = 87.0279%
+TRUTH
+  0   1 
+--- --- 
+326  46   0
+ 33 204   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 88.1773%
+Average Accuracy = 88.1773%
+TRUTH
+  0   1 
+--- --- 
+308  22   0
+ 50 229   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 89.1626%
+Average Accuracy = 89.1626%
+TRUTH
+  0   1 
+--- --- 
+319  27   0
+ 39 224   1     PREDICTIONS
+
+Building Trees:     0    1
+Voted Accuracy   = 86.3711%
+Average Accuracy = 86.3711%
+TRUTH
+  0   1 
+--- --- 
+306  31   0
+ 52 220   1     PREDICTIONS
+
+Overall Voted Accuracy = 87.3892%
+Overall Confusion Matrix:
+
+ TRUTH
+   0    1 
+---- ---- 
+1585  177   0
+ 207 1076   1     PREDICTIONS
+
