@@ -1,0 +1,7 @@
+digraph 1 {
+    node [shape=ellipse]
+    node [shape=box]
+    "(0) 0 Cut=20" -> "(1) Class=0 " [label="<"]
+    node [shape=box]
+    "(0) 0 Cut=20" -> "(2) Class=1 " [label=">="]
+}
