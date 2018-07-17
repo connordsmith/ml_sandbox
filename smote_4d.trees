@@ -1,0 +1,32 @@
+#============================================================
+#Data Format            : avatar
+#Filestem               : smote_4d
+#Truth Column           : 5
+#Number of Trees        : 1
+#Seed for *rand48       : 24601
+#Training Data          : ./smote_4d.data
+#Names File             : ./smote_4d.names
+#Ensemble File          : ./smote_4d.trees
+#Verbosity              : 0
+#Split On Zero Gain     : FALSE
+#Subsample For Splits   : 0
+#Collapse Subtrees      : TRUE
+#Dynamic Bounds         : TRUE
+#Minimum Examples       : 2
+#Split Method           : C45 Style
+#Save Trees             : TRUE
+#============================================================
+NumTrainingExamples  12
+NumClasses           2
+NumExamplesPerClass: 8 4 
+NumAttributes        4
+NumSkippedAttributes 0
+NumTrees             1
+AttributeTypes: CONTINUOUS CONTINUOUS DISCRETE DISCRETE 
+SkipAttributes: NOSKIP NOSKIP NOSKIP NOSKIP 
+MissingAttributeValues: 13,13,A,C
+Tree 1
+SPLIT CONTINUOUS ATT# 0 < 20.0000
+LEAF Class 0 Proportions 8 0
+SPLIT CONTINUOUS ATT# 0 >= 20.0000
+LEAF Class 1 Proportions 0 4
