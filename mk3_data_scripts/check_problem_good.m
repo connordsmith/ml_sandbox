@@ -1,0 +1,13 @@
+PRED_IDX=10;
+RUNS_PER_PROBLEM=8;
+
+DATA=load('ternary.pred');
+N=size(DATA,1);
+
+
+III=1;
+for I=1:RUNS_PER_PROBLEM:N,
+  GOOD(III) = sum(DATA(I:I+RUNS_PER_PROBLEM-1,PRED_IDX)==1);
+  III = III+1;
+end
+

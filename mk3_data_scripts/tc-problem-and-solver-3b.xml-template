@@ -1,0 +1,61 @@
+<ParameterList>
+  <!-- Mesh / Material Settings -->
+ <Parameter name="meshInput" type="string" value = "
+     mesh
+       brick 
+       numx 3
+        xblock 1 1.0, interval 10
+        xblock 2 {3.0*(_MXS_+1)}, first size .1, last size {_MXS_/10}
+        xblock 3 {_MXS_}, interval 10
+       numy 3 
+        yblock 1 1.0, interval 10
+        yblock 2 {3.0*(_MYS_+1)}, first size .1, last size {_MYS_/10}
+        yblock 3 {_MYS_}, interval 10
+       numz 1
+        zblock 1 1.0, interval 50
+       end
+       set assign
+          sideset, ilo, 1
+          sideset, jlo, 2
+          sideset, klo, 3
+          sideset, ihi, 4
+          sideset, jhi, 5
+          sideset, khi, 6
+       end
+     end"
+   />
+ <!-- NOTE: sigma defaults to 1.0 -->
+ <Parameter name="sigma RTC 4" type="string" value="
+    sigma = {_MAXSIGMA_};
+ "/>
+
+ <!-- Solver Settings -->
+ <Parameter name="Preconditioner" type="string" value="MueLu"/>
+ <Parameter name="Maximum Iterations" type="int" value="200"/>
+ <Parameter name="Convergence Tolerance" type="double" value="1e-10"/>
+ <Parameter name="Number of Time Steps" type="int" value="1"/>
+ 
+ <ParameterList name="MueLu">
+   <!-- ===========  GENERAL ================ -->
+   <Parameter        name="verbosity"                            type="string"   value="high"/>
+   <Parameter        name="coarse: max size"                     type="int"      value="1000"/>
+   <Parameter        name="transpose: use implicit"              type="bool"     value="true"/>
+   <Parameter        name="max levels"                	          type="int"      value="10"/>
+   <Parameter        name="number of equations"                  type="int"      value="1"/>
+   
+   <Parameter        name="multigrid algorithm"                  type="string"   value="sa"/>
+   <Parameter        name="sa: use filtered matrix"              type="bool"     value="true"/>
+   
+   <!-- ===========  AGGREGATION  =========== -->
+   <Parameter        name="aggregation: type"                    type="string"   value="uncoupled"/>
+   <Parameter        name="aggregation: drop scheme"             type="string"   value="distance laplacian"/>
+   <Parameter        name="aggregation: drop tol"                type="double"   value="{_DROP_TOL_}"/>
+   
+   <!-- ===========  SMOOTHING  =========== -->
+   <Parameter        name="smoother: type"                       type="string"   value="Chebyshev"/>
+   <ParameterList name="smoother: params"> 
+     <Parameter name="relaxation: sweeps"                      type="int"       value="2"/>
+     <Parameter name="chebyshev: ratio eigenvalue"             type="double"    value="20.0"/>
+   </ParameterList>
+ </ParameterList>
+</ParameterList>

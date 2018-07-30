@@ -1,0 +1,8 @@
+ 1 Sigma_min_mean  : continuous 
+ 2 Sigma_max_mean  : continuous 
+ 3 ElEdge_max      : continuous 
+ 4 ElEdge_mean     : continuous 
+ 5 ElDetJ_min_mean : continuous 
+ 6 ElDetJ_max_mean : continuous 
+ 7 _DROP_TOL_      : continuous 
+ 8 CostEst         : class 0,1

@@ -1,0 +1,37 @@
+# Dakota Input File: dakota_lhs.in
+environment
+  tabular_data
+  tabular_data_file = 'muelu_sampling.dat'
+  top_method_pointer = 'sample'
+
+method
+  id_method = 'sample'
+  sampling
+  sample_type lhs
+  samples = 8
+  seed = 98765
+
+variables
+  # aggregation: drop tolerance
+  discrete_uncertain_set 
+    real = 1
+      descriptors   '_DROP_TOL_'
+      initial_point  0
+      elements_per_variable 8
+      elements       0 1e-3 5e-3 1e-2 2.5e-2 5e-2 7.5e-2 1e-1
+
+interface
+  id_interface = 'I1'
+  analysis_drivers = 'run_muelu.sh'
+    fork
+      aprepro
+  asynchronous evaluation_concurrency = 10
+  failure_capture = recover -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+
+
+responses
+  response_functions = 12
+    descriptors = 'Sigma_min_mean' 'Sigma_max_mean' 'ElEdge_min' 'ElEdge_max' 'ElEdge_mean' 'ElDetJ_min_mean' 'ElDetJ_max_mean' 'Iters' 'Op_Complex' 'Smoo_Complex' 'SolveTime' 'CostEst'
+  no_gradients
+  no_hessians
+
