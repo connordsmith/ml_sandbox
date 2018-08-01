@@ -1,4 +1,4 @@
- Sigma_min_mean, Sigma_max_mean, ElEdge_min, ElEdge_max, ElEdge_mean, ElDetJ_min_mean, ElDetJ_max_mean, Stretch_max, Stretch_min, Stretch_mean, diag_rat_max, diag_rat_min, diag_rat_mean, inv_tap_max, inv_tap_min, inv_tap_mean, skew_max, skew_min, skew_mean, _DROP_TOL_, CostEst
+Sigma_min_mean, Sigma_max_mean, ElEdge_min, ElEdge_max, ElEdge_mean, ElDetJ_min_mean, ElDetJ_max_mean, Stretch_max, Stretch_min, Stretch_mean, diag_rat_max, diag_rat_min, diag_rat_mean, inv_tap_max, inv_tap_min, inv_tap_mean, skew_max, skew_min, skew_mean, _DROP_TOL_, CostEst
 2.28571E-06,2.28571,5,264.9,142.079,0.00466928,3.67852,0.242536,0.00629521,0.0245505,1,1,1,1,1,1,0,0,0,0,0
 2.28571E-06,2.28571,5,264.9,142.079,0.00466928,3.67852,0.242536,0.00629521,0.0245505,1,1,1,1,1,1,0,0,0,0.1,1
 2.28571E-06,2.28571,5,264.9,142.079,0.00466928,3.67852,0.242536,0.00629521,0.0245505,1,1,1,1,1,1,0,0,0,0.005,0
