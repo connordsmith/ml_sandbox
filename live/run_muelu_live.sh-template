@@ -1,0 +1,57 @@
+#!/bin/sh
+
+MUELU_XML="tc-live.xml"
+EXE_FILE="TrilinosCouplings_IntrepidPoisson_Pamgen_Tpetra.exe"
+######################
+function calc() {
+  awk -v CONVFMT="%12.2f" -v OFMT="%.9g" "BEGIN{ print $* }" 
+}
+
+function max() {
+  awk -v CONVFMT="%12.2f" -v OFMT="%.9g" "BEGIN {v=($1 > $2) ? $1 : $2; print v}"
+}
+
+function min() {
+  awk -v CONVFMT="%12.2f" -v OFMT="%.9g" "BEGIN {v=($1 < $2) ? $1 : $2; print v}"
+}
+
+
+######################
+
+# Process the XML file
+# NOTE: The triple underscore guy is a hack to deal with dprepro's poor handling of spaces in variable names
+# Run
+# This is a placeholder version of the MueLu executable line
+./$EXE_FILE --verbose --inputParams=$MUELU_XML > run.out
+
+if [ $? -ne 0 ]; then
+    # Evaluation failed
+    DROP_TOL=`grep 'aggregation: drop tol' run.out | tail -n 1 |cut -f2 -d=`
+    echo "$DROP_TOL,FAIL" >results.out 
+else
+   # Evaluation succeeded: Parse Output
+
+    # Problem characteristics
+    PC1=`grep 'sigma: min/mean =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC2=`grep 'sigma: max/mean =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC3=`grep 'element edge ratio: min =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC4=`grep 'element edge ratio: max =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC5=`grep 'element edge ratio: mean =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC6=`grep 'element det jacobian: min/mean =' run.out | cut -f2 -d= | cut -f1 -d[`
+    PC7=`grep 'element det jacobian: max/mean =' run.out | cut -f2 -d= | cut -f1 -d[`
+
+    # Performance Information
+    ITERS=`grep 'Total Iterations' run.out | cut -f2 -d:`
+    OPCPX=`grep 'Operator complexity' run.out | cut -f2 -d=`
+    SMCPX=`grep 'Smoother complexity' run.out | cut -f2 -d=`
+    SOLVE=`grep 'Total Solve' run.out | cut -f2 -de | cut -f1 -d'('`
+
+    # Compute Cost Estimate
+    CE=`calc $ITERS \* \( 1 + $SMCPX \)`
+
+    DROP_TOL=`grep 'aggregation: drop tol' run.out | tail -n 1 |cut -f2 -d=`
+
+    #echo -e "$PC1\n$PC2\n$PC3\n$PC4\n$PC5\n$PC6\n$PC7\n$ITERS\n$OPCPX\n$SMCPX\n$SOLVE\n$CE\n$DROP_TOL" > results.out
+    echo  "$DROP_TOL,$ITERS,$OPCPX,$SMCPX,$SOLVE,$CE" >results.out
+fi
+

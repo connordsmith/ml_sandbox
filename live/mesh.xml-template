@@ -1,0 +1,29 @@
+  <!-- Mesh / Material Settings -->
+ <Parameter name="meshInput" type="string" value = "
+     mesh
+       brick 
+       numx 3
+        xblock 1 1.0, interval 10
+        xblock 2 {3.0*(_MXS_+1)}, first size .1, last size {_MXS_/10}
+        xblock 3 {_MXS_}, interval 10
+       numy 3 
+        yblock 1 1.0, interval 10
+        yblock 2 {3.0*(_MYS_+1)}, first size .1, last size {_MYS_/10}
+        yblock 3 {_MYS_}, interval 10
+       numz 1
+        zblock 1 1.0, interval 50
+       end
+       set assign
+          sideset, ilo, 1
+          sideset, jlo, 2
+          sideset, klo, 3
+          sideset, ihi, 4
+          sideset, jhi, 5
+          sideset, khi, 6
+       end
+     end"
+   />
+ <!-- NOTE: sigma defaults to 1.0 -->
+ <Parameter name="sigma RTC 4" type="string" value="
+    sigma = {_MAXSIGMA_};
+ "/>
