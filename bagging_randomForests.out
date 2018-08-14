@@ -1,0 +1,146 @@
+============================================================
+Data Format            : avatar
+Data Filename          : ./ternary.data
+Names File             : ./ternary.names
+Truth Column           : 21
+Skipped Feature Numbers: 14-19
+Number of Folds        : 10
+Number of Trees/Fold   : using stopping algorithm
+Crossval Type          : N-fold
+Seed for *rand48       : 24601
+Training Data          : ./ternary.data
+Verbosity              : 0
+Split On Zero Gain     : FALSE
+Subsample For Splits   : 0
+Collapse Subtrees      : TRUE
+Dynamic Bounds         : TRUE
+Minimum Examples       : 2
+Split Method           : C45 Style
+Save Trees             : FALSE
+Random Forests         : 5
+Bagging                : 100.00%
+Output Accuracies      : TRUE
+Output Predictions     : FALSE
+Output Probabilities   : None
+Output Confusion Matrix: TRUE
+============================================================
+Building Trees: 160
+Stopping Algorithm Result: 133 trees with an oob accuracy of 94.8557%
+Voted Accuracy   = 94.4992%
+Average Accuracy = 92.7963%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+189    0  28   -1
+  0 1406  26   0     PREDICTIONS
+ 43   37 707   1
+
+Building Trees: 140
+Stopping Algorithm Result: 109 trees with an oob accuracy of 94.6527%
+Voted Accuracy   = 94.8686%
+Average Accuracy = 93.0744%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+199    0  29   -1
+  0 1403  24   0     PREDICTIONS
+ 33   39 709   1
+
+Building Trees: 100
+Stopping Algorithm Result: 66 trees with an oob accuracy of 94.8339%
+Voted Accuracy   = 93.5550%
+Average Accuracy = 92.3764%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+187    0  31   -1
+  0 1399  38   0     PREDICTIONS
+ 45   43 693   1
+
+Building Trees: 100
+Stopping Algorithm Result: 62 trees with an oob accuracy of 94.7733%
+Voted Accuracy   = 94.7865%
+Average Accuracy = 93.1968%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+198    0  30   -1
+  0 1415  36   0     PREDICTIONS
+ 34   27 696   1
+
+Building Trees: 120
+Stopping Algorithm Result: 82 trees with an oob accuracy of 94.9894%
+Voted Accuracy   = 93.4729%
+Average Accuracy = 92.3345%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+172    0  29   -1
+  0 1404  32   0     PREDICTIONS
+ 60   38 701   1
+
+Building Trees: 100
+Stopping Algorithm Result: 77 trees with an oob accuracy of 94.9237%
+Voted Accuracy   = 95.3613%
+Average Accuracy = 93.5539%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+193    0  15   -1
+  0 1408  25   0     PREDICTIONS
+ 39   34 722   1
+
+Building Trees: 60
+Stopping Algorithm Result: 33 trees with an oob accuracy of 94.6159%
+Voted Accuracy   = 94.4581%
+Average Accuracy = 92.9330%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+191    0  30   -1
+  0 1400  22   0     PREDICTIONS
+ 41   42 710   1
+
+Building Trees: 100
+Stopping Algorithm Result: 68 trees with an oob accuracy of 94.8648%
+Voted Accuracy   = 94.6223%
+Average Accuracy = 92.6489%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+192    0  30   -1
+  0 1406  25   0     PREDICTIONS
+ 39   37 707   1
+
+Building Trees: 100
+Stopping Algorithm Result: 78 trees with an oob accuracy of 94.7466%
+Voted Accuracy   = 94.5402%
+Average Accuracy = 92.9871%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+193    0  29   -1
+  0 1410  33   0     PREDICTIONS
+ 38   33 700   1
+
+Building Trees: 80
+Stopping Algorithm Result: 51 trees with an oob accuracy of 94.7713%
+Voted Accuracy   = 95.1560%
+Average Accuracy = 93.2781%
+   TRUTH
+ -1    0   1 
+--- ---- --- 
+207    0  25   -1
+  0 1414  40   0     PREDICTIONS
+ 24   29 697   1
+
+Overall Voted Accuracy = 94.5320%
+Overall Confusion Matrix:
+
+    TRUTH
+  -1     0    1 
+---- ----- ---- 
+1921     0  276   -1
+   0 14065  301   0     PREDICTIONS
+ 396   359 7042   1
+
